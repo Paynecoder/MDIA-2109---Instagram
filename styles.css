@@ -1,0 +1,244 @@
+:root {
+    --backgroundgray: #FAFAFA;
+    --backgroundwhite: #FFF;
+    --loginbtnblue: #4DB5F9;
+    --ortextgray: #95908E;
+    --placeholdergray: #8E8E8E;
+    --facebookblue: #385185;
+    --signupblue: #0095F6;
+    --textcolor: #262626;
+    --bordercolor: rgb(219, 219, 219);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--backgroundgray);
+    margin: 0px;
+}
+
+.main-container {
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+
+.formsbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+
+}
+
+
+/** IPHONE **/
+
+
+
+
+/** FIRST BOX**/
+
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 420px;
+    width: 350px;
+    background-color: var(--backgroundwhite);
+    border: 1px solid var(--bordercolor);
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/** FIRST BOX LOGO**/
+
+.word-logo {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+/** FIRST BOX INPUTS**/
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.login-inputs input {
+    width: 268px;
+    height: 17px;
+    border: 1px solid var(--bordercolor);
+    border-radius: 4px;
+    align-items: center;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+/** FIRST BOX BUTTON**/
+
+.login-btnbox button {
+    width: 290px;
+    height: 35px;
+    background-color: var(--loginbtnblue);
+    color: #FFF;
+    border: 0;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: 790;
+}
+
+/** FIRST BOX OR ROW**/
+
+.or {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+}
+
+.ortxt {
+    color: var(--ortextgray);
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.or>hr {
+    border: 0px solid var(--ortextgray);
+    width: 125px;
+    height: 0.25px;
+    background-color: var(--ortextgray);
+    margin: 0px;
+}
+
+
+/** FIRST BOX FACEBOOK**/
+
+
+.login-facebook {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 7.5px;
+    margin: 0px;
+    margin-bottom: -15px;
+}
+
+.login-facebook p {
+    color: var(--facebookblue);
+    font-weight: 600;
+}
+
+
+/** FIRST BOX FORGOT**/
+
+
+.forgotpassword a {
+    color: var(--facebookblue);
+    font-size: 13px;
+    
+}
+
+/** SECOND BOX**/
+
+.signup-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 350px;
+    height: 60px;
+    background-color: var(--backgroundwhite);
+    border: 1px solid var(--bordercolor);
+}
+
+.signuptxt {
+    font-size: 15px;
+}
+
+.signupbtn {
+    font-size: 15px;
+    color: var(--loginbtnblue);
+    font-weight: 600;
+}
+
+/** APPS DOWNLOAD **/
+.gettheapptxt {
+    font-size: 15px;
+}
+
+/* FOOTER */
+
+.footerarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.links>div {
+    margin-top: -80px;
+    color: var(--placeholdergray);
+    font-size: 12.5px;
+}
+
+select {
+    border: 1px solid #fff;
+    background-color: rgba(255,255,255,.5);
+    padding: 5px;
+    color: var(--placeholdergray);
+    font-size: 12.5px;
+}
+
+.languagearea {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: -60px;
+}
+
+.languagearea>div {
+    color: var(--placeholdergray);
+    font-size: 12.5px;
+}
+
+/** MEDIA QUERIES */
+
+@media only screen and (max-width: 820px) {
+
+    .iphone {
+        display: none!important;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+    .iphone {
+        display: none!important;
+    }
+}
